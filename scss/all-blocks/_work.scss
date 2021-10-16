@@ -1,0 +1,70 @@
+.work .container {
+max-width: 1106px;
+height: 310px;
+background-color: $zur;
+display: flex;
+}
+// 
+// .worke {
+    // max-width: 700px;
+    // height: 100%;
+    // background-image: url("../img/rasmi.svg");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-color: red;
+// }
+
+.work__heading { 
+margin: 0;
+ padding-left: 90px;
+ max-width: 531px;   
+font-family: 'Space Mono';
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+color: #FFFFFF;
+}
+
+.work__info {
+    display: flex;
+   margin-left: 100px;
+}
+
+.work__link {
+    padding: 0 20px;
+
+}
+
+.work__img {
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 769px) {
+ 
+    .work .container {
+        flex-direction: column;
+    }
+
+    .work__heading {
+        padding-top: 62px;
+        margin-left: -153px;
+    }
+
+    .work__list {
+       margin-top: 40px; 
+       margin-left: -200px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .work__heading {
+        width: 412px;
+        margin-left: -35px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .work__list {
+       margin-left: -154px;
+    }
+} 

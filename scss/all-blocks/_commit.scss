@@ -1,0 +1,86 @@
+.commit {
+    margin-bottom: 80px;
+}
+
+.commit .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.commit__item {
+    max-width: 496px;
+    margin-left: 88px;
+    padding-top: 80px;
+}
+
+.commit__img {
+    // position: absolute;
+    border-radius: 50%;
+    margin-left: -35px;
+}
+
+.commit__sterlka {
+    position: absolute;
+    z-index: 1001;
+    margin-left: 900px;
+    transform: translateY(-20px);
+}
+
+@media only screen and (max-width: 768px) {
+    .commit {
+        margin-top: 50px;
+    }    
+
+    .commit .container {
+        flex-direction: column;
+    }
+
+    .commit__img {
+        order: 1;
+    }
+
+    .commit__item {
+        margin-left: -70px;
+        order: 3;
+    }
+
+    .commit__sterlka {
+        height: 180px;
+        padding-top: 60px;
+       margin-left: 0;
+       transform: translateX(100px);
+    }
+
+    .commit__desc {
+        margin-left: -20px;
+    }
+
+    .commit {
+        .header__btn {
+            margin-left: 120px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .commit__heading {
+        margin-left: 74px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .commit__desc {
+        margin-left: 95px;
+        margin-bottom: 25px;
+    }
+
+    .commit__img {
+        margin: 0;
+    }
+
+    .commit {
+        .header__btn {
+            margin-left: 142px;
+        }
+} 
+}

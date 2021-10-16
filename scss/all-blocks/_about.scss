@@ -1,0 +1,198 @@
+.about {
+    margin-bottom: 40px;
+}
+
+.about .container::before {
+    background-position: 500px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/about-bac.svg");
+}
+
+.about__img {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.about__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    max-width: 496px;
+    padding-left: 60px;
+    padding-top: 80px;
+}
+
+.about__heading { 
+margin: 0;
+padding-bottom: 20px;
+font-family: 'Space Mono';
+font-style: normal;
+font-size: 48px;
+line-height: 48px;
+color: $aliqara;
+margin-bottom: 20;
+}
+
+.about__desc {
+margin: 0;
+padding-bottom: 20px;
+ font-family: 'Lexend Deca';
+font-size: 15px;
+line-height: 25px;
+color: $aliqara;
+}
+
+.header__btn-activ {
+    margin: 0;
+}
+
+.about {
+    .header__btn-activ {
+       background-color: $sariq;
+
+       &:hover {
+           background-color: #FFF;
+       }
+    }
+}
+
+.about__sterlka {
+    position: absolute;
+    z-index: 1001;
+    margin-left: 495px;
+    transform: translateY(315px);
+}
+
+@media only screen and (max-width: 769px)  {
+
+    .about {
+        margin-top: 80px;
+    }
+    .about__item {
+        flex-direction: column;
+    }
+
+    .about__img {
+        order: 1;
+    }
+
+    .about__info {
+        position: absolute;
+        transform: translateY(377px);
+        order: 3;
+    }
+
+    .about__img {
+       margin-left: 100px;
+    }
+    .about__heading {
+        width: 527px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    }
+
+    .about__desc {
+        width: 578px;
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .header__btn-activ {
+        margin-left: 150px;
+    }
+
+    .about__sterlka {
+        width: 747px;
+        height: 148px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+   
+    .about {
+        margin-top: 180px;
+    }
+
+
+    .about .about__img {
+        width: 312px;
+        background-image: url(../img/moblinebrat.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .about__img {
+        margin-left: 0;
+    }
+
+    .about__sterlka {
+        width: 700px;
+        height: 80px;
+        margin-top: -85px;
+    }
+
+    .about__heading {
+        max-width: 312px;
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .about__desc {
+        width: 312px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .about__info {
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+
+    .header__btn-activ {
+        margin-left: 50px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

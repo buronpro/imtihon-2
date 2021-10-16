@@ -1,0 +1,204 @@
+.scoot {
+    margin-top: 90px;
+}
+
+.scoot__list {
+    display: flex;
+}
+
+.scroot__box {
+    transform: translateX(-20px);
+}
+
+.scoot__info {
+    // position: relative;
+    top: 0;
+    max-width: 975px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoot__info::before {
+    background-image: url("../img/path.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    // max-width: 900px;
+}
+
+.scoot__info:nth-child(1)::before{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 96px;
+    height: 96px;
+    transform: translateY(-110px);
+    transform: translateX();
+    background-image: url("../img/kankulator.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+
+.scoot__info:nth-child(2)::before{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 96px;
+    height: 96px;
+    transform: translateY(-110px);
+    transform: translateX();
+    background-image: url("../../img/motasikel.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+
+.scoot__info:nth-child(3)::before{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 96px;
+    height: 96px;
+    transform: translateY(-110px);
+    transform: translateX();
+    background-image: url("../../img/moto.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.scoot__heading {
+ position: relative;
+font-family: 'Space Mono' 'sans-serif';
+font-style: normal;
+font-weight: bold;
+margin-bottom: 20px;
+font-size: 24px;
+line-height: 28px;
+transform: translateX(28px);
+color: $aliqara;
+}
+
+.scoot__desc {
+    position: relative;
+    padding: 0 30px;
+    max-width: 350px;
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $aliqara;
+}
+.scoot__info::before {
+width: 96px;
+ height: 96px;
+// background-image: url("../../img/kankulater.svg");
+// background-repeat: no-repeat;
+// background-size: contain;
+
+}
+
+@media only screen and (max-width: 769px) {
+     
+    .scoot__list {
+         flex-direction:column ;
+     } 
+
+     .scroot__box {
+         margin-left: 120px;
+         transform: translateY(-70px);
+     }
+
+
+
+     .scoot__heading {
+         padding-left: 40px;
+         padding-top: 50px;
+        font-size: 24px;
+        line-height: 28px;
+     }
+     
+     .scoot__desc {
+         margin-left: 35px;
+         padding-left: 15px;
+       font-size: 15px;
+       line-height: 25px;
+     }
+
+     .scoot__info {
+              
+        transform: translateX(62px);
+        margin-top: 30px;
+     }
+
+     .scoot__info:nth-child(1)::before {
+         transform: translateY(20px);
+     }
+
+     .scoot__info:nth-child(2)::before {
+        transform: translateY(20px);
+    }
+
+    .scoot__info:nth-child(3)::before {
+        transform: translateY(20px);
+    }
+
+    
+}
+@media only screen and (max-width: 376px) {
+
+    .scoot {
+        margin-top: 20px;
+    }
+    .scoot__list  {
+        flex-direction: column;
+    } 
+
+
+       .scoot__info {
+        margin-top: 50px;
+    }
+
+    .scroot__box {
+        margin: 0;
+       padding: 0;
+       transform: translateX(-75px);
+    }
+
+      .scoot__info  {
+          padding-top: 150px;
+      }
+
+    .scoot__heading {
+        margin: 0;
+       padding: 0;
+       transform: translateY(137px);
+
+    }
+
+
+
+
+    .scoot__desc  {
+        z-index: 1001;
+        margin: 0;
+        padding: 0;
+        transform: translateY(150px);
+    }
+
+    .scoot__info:nth-child(1)::before{
+        transform: translateX(10px);
+    }
+
+    .scoot__info:nth-child(2)::before{
+        transform: translateX(10px);
+    }
+
+    .scoot__info:nth-child(3)::before{
+        transform: translateX(10px);
+    }
+} 

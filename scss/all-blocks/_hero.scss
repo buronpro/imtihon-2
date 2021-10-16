@@ -1,0 +1,142 @@
+.hero .container {
+    width: 1440px;
+    height: 650px;
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__tablet {
+    display: none;
+}
+
+.hero__heading {
+max-width: 690px;
+margin-top: -160px ;
+padding-left: 165px;
+ font-family: 'Space Mono';
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+color : #FFFFFF;
+}
+
+.hero__desc {
+position: relative;
+max-width: 610px;  
+margin-top: -28px;
+font-family: 'Lexend Deca';
+padding-left: 200px;
+font-style: normal;
+font-size: 15px;
+line-height: 25px;
+color: #FFFFFF;
+}
+
+
+.hero {
+
+    .header__btn{
+    margin-left: 200px;
+    margin-bottom: -20px;
+    
+    &:hover {
+    background-color: darkslategray;
+    }
+}
+}
+
+
+.hero__img  {
+   margin-left: 625px;
+   margin-top: -120px;
+   
+}
+
+.hero__img__item {
+    margin-left: -384px;
+    margin-top: -190px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+  all and (-o-min-device-pixel-ratio: 3/2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+
+    .hero .container {
+    background-image: url("../img/hero@2x.png"); 
+  
+    }
+}
+
+@media only screen and (max-width: 769px) {
+      
+    .hero .container  {
+        max-width: 768px;
+        height: 650px;
+        background-image: url(../../img/tablett.jpg);
+        background-size: contain;
+    }
+
+    .hero__heading {
+     padding-left: 96px;
+     padding-top: 100px;
+    }
+
+    .hero__desc {
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 96px;
+        margin-bottom: 32px;
+    }
+
+    .hero__img {
+        display: none;
+    }
+    .hero__img__item {
+        display: none;
+    }
+
+    .hero__tablet {
+        display: block;
+        margin-left: -133px;
+        transform: translateY(30px);
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    .hero .container  {
+        max-width: 376px;
+        height: 650px;
+        background-image: url("../img/mobleni.jpg");
+        background-size: contain;
+    }
+
+    .hero__heading {
+        padding-top: 180px;
+        padding-left: 32px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero__desc {
+        padding-top: 24px;
+        padding-bottom: 40px;
+        padding-left: 32px;
+        font-size: 15px;
+       line-height: 25px;
+    }
+
+    .hero {
+
+    .header__btn {
+        margin-left: 64px;
+    }
+
+}
+    .hero__tablet {
+        margin-left: -220px;
+    }
+}
